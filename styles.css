@@ -257,7 +257,7 @@ p {
   }
 
   .geetshaan {
-    font-size: 12vw;
+    font-size: 10.5vw;
   }
 
   .quote {
@@ -270,5 +270,9 @@ p {
 
   .bio {
     font-size: 3vw;
+  }
+
+  .img1 {
+    display: none;
   }
 }
