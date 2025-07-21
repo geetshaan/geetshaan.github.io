@@ -6,6 +6,7 @@
 
 body {
   text-align: center;
+  overflow-x: hidden;
 }
 
 h3 {
@@ -20,28 +21,6 @@ p {
 
 .home {
   display: grid;
-}
-
-@media screen and (max-width: 1000px) {
-  .img1 {
-    opacity: 0.3;
-  }
-}
-
-@media screen and (min-width: 1100px) {
-  .dropdwn {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  .nav-opt {
-    display: none;
-  }
-
-  .btn {
-    display: none;
-  }
 }
 
 .nav-items {
@@ -64,13 +43,15 @@ p {
 
 .wlcm {
   margin-bottom: 1.9404915912031049vh;
+  font-size: 2.7vw;
+  text-decoration: underline double;
 }
 
 .nav-opt {
   font-weight: bold;
   text-decoration: none;
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
 }
 
 .test {
@@ -89,7 +70,9 @@ p {
 }
 
 .img1 {
-  padding-bottom: 18.111254851228978vh;
+  padding-bottom: 90.55627425614489vh;
+  height: 71.53945666235447vh;
+  width: 16.0625vw;
   z-index: -1;
 }
 
@@ -107,7 +90,7 @@ p {
   border-radius: 28px;
   font-family: Arial;
   color: black;
-  font-size: 20px;
+  font-size: 1.25vw;
   background: white;
   padding: 1.2936610608020698vh 1.25vw 1.2936610608020698vh 1.25vw;
   border: solid black 4px;
@@ -126,7 +109,7 @@ p {
   border-radius: 28px;
   font-family: Arial;
   color: black;
-  font-size: 20px;
+  font-size: 1.25vw;
   background: rgb(0, 175, 0);
   padding: 1.2936610608020698vh 1.25vw 1.2936610608020698vh 1.25vw;
   border: solid black 4px;
@@ -173,7 +156,7 @@ p {
 
 .me-text {
   text-align: left;
-  font-size: 2rem;
+  font-size: 2vw;
   width: 40%;
 }
 
@@ -189,5 +172,103 @@ p {
   height: 90%;
   background-color: transparent;
   border-style: none;
-  margin-left: 55%;
+}
+
+.geetshaan {
+  font-size: 5vw;
+}
+
+.quote {
+  font-size: 2vw;
+  font-family: serif;
+}
+
+.bio {
+  font-size: 1.5vw;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+  .img1 {
+    opacity: 0.3;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .dropdwn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .nav-opt {
+    display: none;
+  }
+
+  .buttons {
+    display: grid;
+    gap: 1.5vh;
+  }
+
+  .down {
+    width: 32%;
+  }
+
+  .btn {
+    width: 47%;
+  }
+
+  .dropdwn {
+    margin-left: 55%;
+  }
+
+  .geetshaan {
+    font-size: 7.5vw;
+  }
+
+  .quote {
+    font-size: 5vw;
+  }
+
+  .wlcm {
+    font-size: 5vw;
+  }
+
+  .bio {
+    font-size: 2vw;
+  }
+
+  .img1 {
+    padding-bottom: 105vh;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .nav-opt {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .dropdwn {
+    margin-left: 0;
+  }
+
+  .geetshaan {
+    font-size: 12vw;
+  }
+
+  .quote {
+    font-size: 5.5vw;
+  }
+
+  .wlcm {
+    font-size: 5.5vw;
+  }
+
+  .bio {
+    font-size: 3vw;
+  }
 }
