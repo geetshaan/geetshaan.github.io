@@ -9,14 +9,21 @@ body {
   overflow-x: hidden;
 }
 
+h1 {
+  font-family: "Montserrat", sans-serif;
+}
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
 h3 {
-  font-family: monospace;
+  font-family: "Montserrat", sans-serif;
 }
 h4 {
-  font-family: monospace;
+  font-family: "Montserrat", sans-serif;
 }
 p {
-  font-family: monospace;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.33;
 }
 
 .home {
@@ -43,37 +50,22 @@ p {
 
 .wlcm {
   margin-bottom: 1.9404915912031049vh;
-  font-size: 2.7vw;
+  font-size: 2.2rem;
   text-decoration: underline double;
+  font-family: "Montserrat", sans-serif;
 }
 
 .nav-opt {
   font-weight: bold;
   text-decoration: none;
   color: black;
-  font-size: 1.5vw;
-}
-
-.test {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12.5vw;
-  margin-top: 10.349288486416558vh;
-  margin-bottom: 6.468305304010349vh;
+  font-size: 1.5rem;
 }
 
 .msg {
   width: 40.625vw;
   padding-bottom: 19.404915912031047vh;
   text-align: left;
-}
-
-.img1 {
-  padding-bottom: 90.55627425614489vh;
-  height: 71.53945666235447vh;
-  width: 16.0625vw;
-  z-index: -1;
 }
 
 .logo {
@@ -90,9 +82,9 @@ p {
   border-radius: 28px;
   font-family: Arial;
   color: black;
-  font-size: 1.25vw;
+  font-size: 20px;
   background: white;
-  padding: 1.2936610608020698vh 1.25vw 1.2936610608020698vh 1.25vw;
+  padding: 10px 20px 10px 20px;
   border: solid black 4px;
   text-decoration: none;
 }
@@ -109,9 +101,9 @@ p {
   border-radius: 28px;
   font-family: Arial;
   color: black;
-  font-size: 1.25vw;
+  font-size: 20px;
   background: rgb(0, 175, 0);
-  padding: 1.2936610608020698vh 1.25vw 1.2936610608020698vh 1.25vw;
+  padding: 10px 20px 10px 20px;
   border: solid black 4px;
   text-decoration: none;
 }
@@ -135,7 +127,7 @@ p {
 }
 
 .stack-opt {
-  width: 4.375vw;
+  width: 5vw;
 }
 
 .about {
@@ -156,7 +148,7 @@ p {
 
 .me-text {
   text-align: left;
-  font-size: 2vw;
+  font-size: 1.5rem;
   width: 40%;
 }
 
@@ -166,7 +158,7 @@ p {
 }
 
 .dropdwnimg {
-  height: 100%;
+  height: 85%;
 }
 .dropdwn {
   height: 90%;
@@ -175,21 +167,60 @@ p {
 }
 
 .geetshaan {
-  font-size: 5vw;
+  font-size: 5rem;
+  font-family: "Orbitron", sans-serif;
+  line-height: 1.1;
+}
+
+.my-name {
+  font-size: 6.4rem;
+  font-family: "Bitcount Single", system-ui;
 }
 
 .quote {
-  font-size: 2vw;
-  font-family: serif;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 .bio {
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   margin-bottom: 30px;
+}
+
+.top-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  justify-items: center;
+  margin-top: 10.349288486416558vh;
+  margin-bottom: 6.468305304010349vh;
+}
+
+.img1 {
+  align-self: stretch;
+  justify-self: start;
+  height: 71.53945666235447vh;
+  width: 16.0625vw;
+  z-index: -1;
+  padding-bottom: 90.55627425614489vh;
 }
 
 @media screen and (min-width: 1170px) {
   .dropdwn {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .nav-opt {
+    display: none;
+  }
+
+  .dropdwn {
+    margin-left: 60%;
+  }
+
+  .img1 {
+    opacity: 0.3;
   }
 }
