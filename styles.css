@@ -149,7 +149,7 @@ p {
 .me-text {
   text-align: left;
   font-size: 1.5rem;
-  width: 40%;
+  width: 50%;
 }
 
 .buttons {
@@ -222,5 +222,9 @@ p {
 
   .img1 {
     opacity: 0.3;
+  }
+
+  .stack-opt {
+    width: 6.5vw;
   }
 }
