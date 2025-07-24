@@ -3,411 +3,486 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-body {
-  text-align: center;
-  overflow-x: hidden;
-}
-
-h1 {
-  font-family: "Montserrat", sans-serif;
-}
-h2 {
-  font-family: "Montserrat", sans-serif;
-}
-h3 {
-  font-family: "Montserrat", sans-serif;
-}
-h4 {
-  font-family: "Montserrat", sans-serif;
-}
-p {
-  font-family: "Montserrat", sans-serif;
-  line-height: 1.33;
-}
-
-/*=================================================CLASS=================================================*/
-
-/*home = navbar + top-container*/
-
-.home {
-  display: grid;
-}
-
-/*----------------Navbar----------------*/
-
-.nav-items {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  height: 70px;
-  width: 100vw;
-  gap: 1.875vw;
-  padding-left: 11.25vw;
-  position: fixed;
-  border-bottom-style: solid;
-  background-color: snow;
-}
-
-.nav {
-  height: 70px;
-  z-index: 100;
-}
-
-.nav-opt {
-  font-weight: bold;
-  text-decoration: none;
-  color: black;
-  font-size: 1.5rem;
-}
-
-.logo {
-  padding-top: 0.258732212160414vh 0.125vw 0.258732212160414vh 0.125vw;
-  font-size: 2rem;
-  border-style: solid;
-  color: black;
-  text-decoration: none;
-}
-
-.dropbtn {
-  height: 90%;
-  background-color: transparent;
-  border-style: none;
-  cursor: pointer;
-}
-
-.dropdwnimg {
-  height: 85%;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  height: 90%;
-}
-
-.dropdown-content {
-  font-family: "Montserrat", sans-serif;
-  display: none;
-  position: absolute;
-  right: 0;
-  background-color: #f9f9f9;
-  min-width: 300px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/*----------------top-container = left-text + top-img----------------*/
-
-.top-container {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  align-items: center;
-  justify-items: center;
-  margin-top: 10.349288486416558vh;
-  margin-bottom: 6.468305304010349vh;
-}
-
-/*left-text = wlcm + geetshaan(includes my-name) + quote + bio + buttons()*/
-
-.left-text {
-  width: 40.625vw;
-  padding-bottom: 19.404915912031047vh;
-  text-align: left;
-}
-
-.wlcm {
-  margin-bottom: 1.9404915912031049vh;
-  font-size: 2.2rem;
-  text-decoration: underline double;
-  font-family: "Montserrat", sans-serif;
-}
-
-.geetshaan {
-  font-size: 5rem;
-  font-family: "Orbitron", sans-serif;
-  line-height: 1.1;
-  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-}
-
-.my-name {
-  font-size: 6.4rem;
-  font-family: "Bitcount Single", system-ui;
-  text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkred;
-}
-
-.quote {
-  font-size: 2rem;
-  font-family: "Montserrat", sans-serif;
-  text-shadow: 1px 1px 2px black, 0 0 25px orange, 0 0 5px darkorange;
-
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid black; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0;
+@media screen and (min-width: 958px) {
+  body {
+    text-align: center;
+    overflow-x: hidden;
   }
-  to {
-    width: 100%;
+
+  h1 {
+    font-family: "Montserrat", sans-serif;
   }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
+  h2 {
+    font-family: "Montserrat", sans-serif;
   }
-  50% {
-    border-color: white;
+  h3 {
+    font-family: "Montserrat", sans-serif;
   }
-}
-
-.bio {
-  font-size: 1.5rem;
-  margin-bottom: 30px;
-}
-
-.buttons {
-  display: flex;
-  gap: 0.625vw;
-}
-
-.cntctmebtn {
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
-  font-family: Arial;
-  color: black;
-  font-size: 20px;
-  background: white;
-  padding: 10px 20px 10px 20px;
-  border: solid black 4px;
-  text-decoration: none;
-}
-
-.cntctmebtn:hover {
-  background: black;
-  text-decoration: none;
-  color: white;
-}
-
-.dwnld {
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
-  font-family: Arial;
-  color: black;
-  font-size: 20px;
-  background: rgb(0, 175, 0);
-  padding: 10px 20px 10px 20px;
-  border: solid black 4px;
-  text-decoration: none;
-}
-
-.dwnld:hover {
-  background: rgb(0, 255, 0);
-  text-decoration: none;
-}
-
-.top-img {
-  align-self: stretch;
-  justify-self: start;
-  height: 71.53945666235447vh;
-  width: 16.0625vw;
-  z-index: -1;
-  padding-bottom: 90.55627425614489vh;
-}
-
-/*----------------tech = h1(see index.html) + stack(includes stack-opt)----------------*/
-
-.tech {
-  background-color: #e1e1e1;
-  padding-bottom: 12.936610608020699vh;
-}
-
-.stack {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.875vw;
-  margin-top: 6.468305304010349vh;
-}
-
-.stack-opt {
-  width: 5vw;
-}
-
-/*----------------about = h1(see index.html) + me(my-pic + me-text)----------------*/
-
-.about {
-  margin-top: 17.464424320827945vh;
-}
-
-.me {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 6.468305304010349vh;
-  gap: 4.375vw;
-}
-
-.my-pic {
-  width: 18.75vw;
-}
-
-.me-text {
-  text-align: left;
-  font-size: 1.5rem;
-  width: 50%;
-}
-
-.education {
-  margin-top: 12.5vh;
-}
-
-.edu-layout-parent {
-  display: flex;
-  width: 100vw;
-  justify-content: center;
-  align-items: center;
-  gap: 0;
-  margin-top: 5vh;
-}
-
-.left-parent {
-  width: 50vw;
-  border-right-style: solid;
-  border-right-width: 4px;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  justify-content: end;
-  padding-right: 20px;
-  row-gap: 600px;
-  padding-top: 50px;
-}
-
-.right-parent {
-  width: 50vw;
-  text-align: left;
-  grid-template-rows: 1fr;
-  justify-content: start;
-  padding-left: 20px;
-  padding-top: 50px;
-}
-
-.clg {
-  height: 500px;
-  width: 400px;
-  background-color: beige;
-  border-radius: 25px;
-  border-style: solid;
-  box-shadow: 1px 1px 2px black, 0 0 25px orange, 0 0 5px darkorange;
-}
-
-.schl2 {
-  height: 500px;
-  width: 400px;
-  background-color: beige;
-  border-radius: 25px;
-  border-style: solid;
-  box-shadow: 1px 1px 2px black, 0 0 25px orange, 0 0 5px darkorange;
-}
-
-.schl1 {
-  height: 500px;
-  width: 400px;
-  background-color: beige;
-  border-radius: 25px;
-  border-style: solid;
-  box-shadow: 1px 1px 2px black, 0 0 25px orange, 0 0 5px darkorange;
-}
-
-.clg-name-parent {
-  display: flex;
-  padding: 17px;
-  gap: 17px;
-}
-
-.clg-img {
-  width: 25%;
-}
-
-.schl1-name-parent {
-  display: flex;
-  padding: 17px;
-  gap: 17px;
-}
-
-.schl2-img {
-  width: 25%;
-}
-
-.schl2-name-parent {
-  display: flex;
-  padding: 17px;
-  gap: 17px;
-  justify-content: flex-end;
-}
-
-.schl1-img {
-  width: 25%;
-}
-
-.edu-list {
-  display: inline-block;
-  font-family: "Montserrat", sans-serif;
-}
-
-/*=================================================MEDIA QUERIES=================================================*/
-
-@media screen and (min-width: 1170px) {
-  .dropdown {
-    display: none;
+  h4 {
+    font-family: "Montserrat", sans-serif;
   }
-}
+  p {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.33;
+  }
 
-@media screen and (max-width: 1170px) {
+  /*=================================================CLASS=================================================*/
+
+  /*home = navbar + top-container*/
+
+  .home {
+    display: grid;
+  }
+
+  /*----------------Navbar----------------*/
+
+  .nav-items {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 70px;
+    width: 100vw;
+    gap: 1.875vw;
+    padding-left: 11.25vw;
+    position: fixed;
+    border-bottom-style: solid;
+    background-color: snow;
+  }
+
+  .nav {
+    height: 70px;
+    z-index: 100;
+  }
+
   .nav-opt {
-    display: none;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    padding-top: 0.258732212160414vh 0.125vw 0.258732212160414vh 0.125vw;
+    font-size: 2rem;
+    border-style: solid;
+    color: black;
+    text-decoration: none;
+  }
+
+  .dropbtn {
+    height: 90%;
+    background-color: transparent;
+    border-style: none;
+    cursor: pointer;
+  }
+
+  .dropdwnimg {
+    height: 85%;
   }
 
   .dropdown {
-    margin-left: 60%;
+    position: relative;
+    display: inline-block;
+    height: 90%;
+    margin-top: 5px;
+  }
+
+  .dropdown-content {
+    font-family: "Montserrat", sans-serif;
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /*----------------top-container = left-text + top-img----------------*/
+
+  .top-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    justify-items: center;
+    margin-top: 10.349288486416558vh;
+    margin-bottom: 6.468305304010349vh;
+  }
+
+  /*left-text = wlcm + geetshaan(includes my-name) + quote + bio + buttons()*/
+
+  .left-text {
+    width: 40.625vw;
+    padding-bottom: 19.404915912031047vh;
+    text-align: left;
+  }
+
+  .wlcm {
+    margin-bottom: 1.9404915912031049vh;
+    font-size: 2.2rem;
+    text-decoration: underline double;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .geetshaan {
+    font-size: 5rem;
+    font-family: "Orbitron", sans-serif;
+    line-height: 1.1;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  }
+
+  .my-name {
+    font-size: 6.4rem;
+    font-family: "Bitcount Single", system-ui;
+    text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkred;
+  }
+
+  .quote {
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    text-shadow: 1px 1px 2px black, 0 0 25px orange, 0 0 5px darkorange;
+
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid black; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.15em; /* Adjust as needed */
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: white;
+    }
+  }
+
+  .bio {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 0.625vw;
+  }
+
+  .cntctmebtn {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: black;
+    font-size: 20px;
+    background: white;
+    padding: 10px 20px 10px 20px;
+    border: solid black 4px;
+    text-decoration: none;
+  }
+
+  .cntctmebtn:hover {
+    background: black;
+    text-decoration: none;
+    color: white;
+  }
+
+  .dwnld {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: black;
+    font-size: 20px;
+    background: rgb(0, 175, 0);
+    padding: 10px 20px 10px 20px;
+    border: solid black 4px;
+    text-decoration: none;
+  }
+
+  .dwnld:hover {
+    background: rgb(0, 255, 0);
+    text-decoration: none;
   }
 
   .top-img {
-    opacity: 0.3;
+    align-self: stretch;
+    justify-self: start;
+    height: 71.53945666235447vh;
+    width: 16.0625vw;
+    z-index: -1;
+    padding-bottom: 90.55627425614489vh;
+  }
+
+  /*----------------tech = h1(see index.html) + stack(includes stack-opt)----------------*/
+
+  .tech {
+    background-color: #e1e1e1;
+    padding-bottom: 12.936610608020699vh;
+  }
+
+  .stack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.875vw;
+    margin-top: 6.468305304010349vh;
   }
 
   .stack-opt {
-    width: 6.5vw;
+    width: 5vw;
+  }
+
+  /*----------------about = h1(see index.html) + me(my-pic + me-text)----------------*/
+
+  .about {
+    margin-top: 17.464424320827945vh;
+  }
+
+  .me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6.468305304010349vh;
+    gap: 4.375vw;
+  }
+
+  .my-pic {
+    width: 18.75vw;
+  }
+
+  .me-text {
+    text-align: left;
+    font-size: 1.5rem;
+    width: 50%;
+  }
+
+  .education {
+    margin-top: 12.5vh;
+  }
+
+  .edu-layout-parent {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    margin-top: 5vh;
+  }
+
+  .left-parent {
+    width: 50vw;
+    border-right-style: solid;
+    border-right-width: 4px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: end;
+    padding-right: 20px;
+    row-gap: 500px;
+    padding-top: 50px;
+  }
+
+  .right-parent {
+    width: 50vw;
+    text-align: left;
+    grid-template-rows: 1fr;
+    justify-content: start;
+    padding-left: 20px;
+    padding-top: 50px;
+  }
+
+  .clg {
+    height: 500px;
+    width: 400px;
+    background-color: beige;
+    border-radius: 25px;
+    border-style: solid;
+    box-shadow: 1px 1px 2px black, 0 0 25px orange, 0 0 5px darkorange;
+  }
+
+  .schl2 {
+    height: 500px;
+    width: 400px;
+    background-color: beige;
+    border-radius: 25px;
+    border-style: solid;
+    box-shadow: 1px 1px 2px black, 0 0 25px orange, 0 0 5px darkorange;
+  }
+
+  .schl1 {
+    height: 500px;
+    width: 400px;
+    background-color: beige;
+    border-radius: 25px;
+    border-style: solid;
+    box-shadow: 1px 1px 2px black, 0 0 25px orange, 0 0 5px darkorange;
+  }
+
+  .clg-name-parent {
+    display: flex;
+    padding: 17px;
+    gap: 17px;
+  }
+
+  .clg-img {
+    width: 25%;
+  }
+
+  .schl1-name-parent {
+    display: flex;
+    padding: 17px;
+    gap: 17px;
+  }
+
+  .schl2-img {
+    width: 25%;
+  }
+
+  .schl2-name-parent {
+    display: flex;
+    padding: 17px;
+    gap: 17px;
+    justify-content: flex-end;
+  }
+
+  .schl1-img {
+    width: 25%;
+  }
+
+  .edu-list {
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .interest {
+    margin-top: 12.5vh;
+  }
+
+  .interest-layout-parent {
+    width: 940px;
+    height: 580px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+    margin-top: 5vh;
+  }
+
+  .interest-opt {
+    width: 450px;
+    height: 270px;
+    background-color: #cce2ff;
+    border-radius: 25px;
+    border-style: solid;
+    box-shadow: 1px 1px 2px black, 0 0 25px turquoise, 0 0 5px darkturquoise;
+  }
+
+  .interest-name-parent {
+    display: flex;
+    padding: 17px;
+    gap: 17px;
+  }
+
+  .interest-img {
+    width: 20%;
+  }
+
+  /*.last {
+  margin: auto;
+  margin-top: 9px;
+}*/
+
+  .corner {
+    margin-top: 17.464424320827945vh;
+    background-color: #e1e1e1;
+    padding-top: 12.936610608020699vh;
+    padding-bottom: 12.936610608020699vh;
+    background-image: url(Images/bg.jpg);
+  }
+
+  .corner-txt {
+    background: radial-gradient(circle, dodgerblue, yellow);
+    background-clip: text;
+    color: transparent;
+    animation: corner-txt 15s linear infinite;
+    background-size: 200% 200%;
+    font-size: 3rem;
+  }
+
+  @keyframes corner-txt {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+
+  /*=================================================MEDIA QUERIES=================================================*/
+
+  @media screen and (min-width: 1170px) {
+    .dropdown {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1170px) {
+    .nav-opt {
+      display: none;
+    }
+
+    .dropdown {
+      margin-left: 60%;
+    }
+
+    .top-img {
+      opacity: 0.3;
+    }
+
+    .stack-opt {
+      width: 6.5vw;
+    }
+  }
+
+  .error {
+    display: none;
   }
 }
 
 @media screen and (max-width: 958px) {
-  .logo {
+  main {
     display: none;
   }
 }
