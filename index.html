@@ -4,18 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Geetshaan</title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen and (min-width: 958px)"
-      href="styles.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen and (min-width: 480px) and (max-width: 958px)"
-      href="styles_below958.css"
-    />
+    <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="favicon.ico?v=2" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,13 +23,22 @@
           <a href="#" class="nav-opt">Certifications</a>
           <a href="#" class="nav-opt">Projects</a>
           <a href="#" class="nav-opt">Contact Me</a>
-          <button class="dropdwn">
-            <img src="Images/menu-burger.png" class="dropdwnimg" />
-          </button>
+          <div class="dropdown" style="float: right">
+            <button class="dropbtn">
+              <img src="Images/menu-burger.png" class="dropdwnimg" />
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#home">Home</a>
+              <a href="#about">About Me</a>
+              <a href="#">Certifications</a>
+              <a href="#">Projects</a>
+              <a href="#">Contact Me</a>
+            </div>
+          </div>
         </div>
       </div>
       <div class="top-container">
-        <div class="msg">
+        <div class="left-text">
           <h1 class="wlcm">
             <em>WELCOME</em>
           </h1>
@@ -54,12 +52,12 @@
             contact Me!!!（*＾-＾*）
           </p>
           <div class="buttons">
-            <a href="#" class="down">Contact Me</a>
-            <a href="#" class="btn">Download Resume</a>
+            <a href="#" class="cntctmebtn">Contact Me</a>
+            <a href="#" class="dwnld">Download Resume</a>
           </div>
         </div>
-        <div class="img1">
-          <img src="Images/download.jpg" alt="TechStack" />
+        <div class="top-img">
+          <img src="Images/download.jpg" alt="Geetshaan TechStack" />
         </div>
       </div>
     </div>
@@ -122,7 +120,11 @@
       </h1>
       <div class="me">
         <div>
-          <img src="Images/user.png" alt="Boy" class="boy" />
+          <img
+            src="Images/Geetshaan Bera.png"
+            alt="Geetshaan Bera"
+            class="my-pic"
+          />
         </div>
         <p class="me-text">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet dolorum
@@ -137,6 +139,122 @@
           eligendi iste non beatae unde impedit magni nulla, vero expedita
           nostrum.
         </p>
+      </div>
+      <div class="education">
+        <h1 style="font-size: 2.3rem; text-decoration: overline">
+          My Education
+        </h1>
+        <div class="edu-layout-parent">
+          <div class="left-parent">
+            <div class="clg">
+              <div class="clg-name-parent">
+                <img
+                  src="Images/college.png"
+                  alt="University"
+                  class="clg-img"
+                />
+                <h3 style="font-size: 1.2rem; align-self: center">
+                  Demo University
+                </h3>
+              </div>
+              <div
+                style="
+                  width: 100%;
+                  padding-left: 10%;
+                  padding-right: 3%;
+                  text-align: left;
+                "
+              >
+                <ul class="edu-list">
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </li>
+                  <br />
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Labore corporis quidem voluptates maxime, dolorem expedita
+                    laboriosam ullam inventore!
+                  </li>
+                  <br />
+                  <li>
+                    voluptatum libero facilis et necessitatibus illum ad
+                    provident saepe, tenetur cupiditate sed.
+                  </li>
+                  <br />
+                  <li>
+                    Nulla minus dignissimos laborum officiis debitis repellendus
+                    tempore ad asperiores impedit eos! Nobis quo, debitis eum
+                    accusamus mollitia consequuntur vero perspiciatis sit!
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="schl1">
+              <div class="schl1-name-parent">
+                <img src="Images/badge.png" alt="Schhol1" class="schl1-img" />
+                <h3 style="font-size: 1.2rem; align-self: center">
+                  Demo School 1
+                </h3>
+              </div>
+              <div
+                style="
+                  width: 100%;
+                  padding-left: 10%;
+                  padding-right: 3%;
+                  text-align: left;
+                "
+              >
+                <ul class="edu-list">
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </li>
+                  <br />
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Labore corporis quidem voluptates maxime, dolorem expedita
+                    laboriosam ullam inventore!
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="right-parent">
+            <div class="schl2">
+              <div class="schl2-name-parent">
+                <h3 style="font-size: 1.2rem; align-self: center">
+                  Demo School 2
+                </h3>
+                <img src="Images/badge.png" alt="Schhol2" class="schl2-img" />
+              </div>
+              <div
+                style="
+                  width: 100%;
+                  padding-left: 10%;
+                  padding-right: 3%;
+                  text-align: left;
+                "
+              >
+                <ul class="edu-list">
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </li>
+                  <br />
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Labore corporis quidem voluptates maxime, dolorem expedita
+                    laboriosam ullam inventore!
+                  </li>
+                  <br />
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laborum quas, consequuntur minima, maxime dolor nisi
+                    doloremque soluta quidem sit culpa asperiores qui,
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
