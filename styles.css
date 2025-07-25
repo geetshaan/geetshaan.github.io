@@ -386,8 +386,8 @@
   }
 
   .interest-layout-parent {
-    width: 950px;
-    height: 590px;
+    width: 1000px;
+    height: 640px;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -490,6 +490,10 @@
     gap: 30px;
   }
 
+  .second-certificate-parent {
+    margin-top: 30px;
+  }
+
   .certificate {
     width: 400px;
     height: 250px;
@@ -590,7 +594,11 @@
     align-items: center;
     margin: auto;
     margin-top: 8vh;
-    row-gap: 30px;
+    row-gap: 40px;
+  }
+
+  .second-certificate-parent {
+    margin-top: 40px;
   }
 }
 
@@ -601,6 +609,18 @@
     align-items: center;
     margin: auto;
     margin-top: 8vh;
-    row-gap: 30px;
+    row-gap: 40px;
+  }
+
+  .interest-layout-parent {
+    display: grid;
+    width: 450px;
+    height: 1240px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 5vh;
   }
 }
