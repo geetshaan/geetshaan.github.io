@@ -611,7 +611,9 @@
     margin-top: 8vh;
     row-gap: 40px;
   }
+}
 
+@media screen and (max-width: 1050px) {
   .interest-layout-parent {
     display: grid;
     width: 450px;
