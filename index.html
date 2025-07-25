@@ -12,8 +12,13 @@
       href="https://fonts.googleapis.com/css2?family=Bitcount+Single&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
       rel="stylesheet"
     />
+    <link href="aos-master/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
+    <script src="aos-master/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <main>
       <div class="home" id="home">
         <div class="nav">
@@ -38,7 +43,7 @@
             </div>
           </div>
         </div>
-        <div class="top-container">
+        <div class="top-container" data-aos="fade-up">
           <div class="left-text">
             <h1 class="wlcm">
               <em>WELCOME</em>
@@ -65,7 +70,7 @@
         </div>
       </div>
 
-      <div class="tech">
+      <div class="tech" data-aos="fade-left">
         <h1
           style="
             padding-top: 12.936610608020699vh;
@@ -121,10 +126,13 @@
       </div>
 
       <div class="about" id="about">
-        <h1 style="font-size: 2.5rem; text-decoration: overline double">
+        <h1
+          style="font-size: 2.5rem; text-decoration: overline double"
+          data-aos="fade-down"
+        >
           About Me
         </h1>
-        <div class="me">
+        <div class="me" data-aos="fade-right">
           <div>
             <img
               src="Images/Geetshaan Bera.png"
@@ -147,12 +155,15 @@
           </p>
         </div>
         <div class="education">
-          <h1 style="font-size: 2.3rem; text-decoration: overline">
+          <h1
+            style="font-size: 2.3rem; text-decoration: overline"
+            data-aos="fade-down"
+          >
             My Education
           </h1>
           <div class="edu-layout-parent">
             <div class="left-parent">
-              <div class="clg">
+              <div class="clg" data-aos="fade-right">
                 <div class="clg-name-parent">
                   <img
                     src="Images/college.png"
@@ -205,7 +216,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="schl1">
+              <div class="schl1" data-aos="fade-right">
                 <div class="schl1-name-parent">
                   <img src="Images/badge.png" alt="School1" class="schl1-img" />
                   <div style="align-self: center">
@@ -244,7 +255,7 @@
               </div>
             </div>
             <div class="right-parent">
-              <div class="schl2">
+              <div class="schl2" data-aos="fade-left">
                 <div class="schl2-name-parent">
                   <div style="align-self: center">
                     <h3 style="font-size: 1.2rem">Demo School 2</h3>
@@ -284,11 +295,14 @@
             </div>
           </div>
           <div class="interest">
-            <h1 style="font-size: 2.3rem; text-decoration: overline">
+            <h1
+              style="font-size: 2.3rem; text-decoration: overline"
+              data-aos="fade-down"
+            >
               My Interests
             </h1>
             <div class="interest-layout-parent">
-              <div class="interest-opt">
+              <div class="interest-opt" data-aos="fade-right">
                 <div class="interest-name-parent">
                   <img
                     src="Images/responsive.png"
@@ -319,7 +333,7 @@
                   maiores minus. Nihil.
                 </p>
               </div>
-              <div class="interest-opt">
+              <div class="interest-opt" data-aos="fade-left">
                 <div class="interest-name-parent">
                   <img
                     src="Images/coding.png"
@@ -350,7 +364,7 @@
                   maiores minus. Nihil.
                 </p>
               </div>
-              <div class="interest-opt">
+              <div class="interest-opt" data-aos="fade-right">
                 <div class="interest-name-parent">
                   <img
                     src="Images/ai.png"
@@ -381,7 +395,7 @@
                   maiores minus. Nihil.
                 </p>
               </div>
-              <div class="interest-opt">
+              <div class="interest-opt" data-aos="fade-left">
                 <div class="interest-name-parent">
                   <img
                     src="Images/database.png"
@@ -477,10 +491,13 @@
       </div>
 
       <div class="certifications">
-        <h1 style="font-size: 2.5rem; text-decoration: overline double">
+        <h1
+          style="font-size: 2.5rem; text-decoration: overline double"
+          data-aos="fade-down"
+        >
           MY CERTIFICATIONS
         </h1>
-        <div class="certificate-layout-parent">
+        <div class="certificate-layout-parent" data-aos="fade-right">
           <div class="certificate">
             <div class="certificate-name-parent">
               <img
@@ -532,7 +549,7 @@
               View Credential
             </a>
           </div>
-          <div class="certificate">
+          <div class="certificate" data-aos="fade-right">
             <div class="certificate-name-parent">
               <img
                 src="Images/HackerRank_Icon-1000px.png"
@@ -583,7 +600,7 @@
               View Credential
             </a>
           </div>
-          <div class="certificate">
+          <div class="certificate" data-aos="fade-right">
             <div class="certificate-name-parent">
               <img
                 src="Images/HackerRank_Icon-1000px.png"
@@ -635,7 +652,10 @@
             </a>
           </div>
         </div>
-        <div class="certificate-layout-parent second-certificate-parent">
+        <div
+          class="certificate-layout-parent second-certificate-parent"
+          data-aos="fade-left"
+        >
           <div class="certificate">
             <div class="certificate-name-parent">
               <img
@@ -687,7 +707,7 @@
               View Credential
             </a>
           </div>
-          <div class="certificate">
+          <div class="certificate" data-aos="fade-left">
             <div class="certificate-name-parent">
               <img
                 src="Images/HackerRank_Icon-1000px.png"
@@ -738,7 +758,7 @@
               View Credential
             </a>
           </div>
-          <div class="certificate">
+          <div class="certificate" data-aos="fade-left">
             <div class="certificate-name-parent">
               <img
                 src="Images/HackerRank_Icon-1000px.png"
@@ -793,11 +813,14 @@
       </div>
 
       <div class="projects" id="projects">
-        <h1 style="font-size: 2.5rem; text-decoration: overline double">
+        <h1
+          style="font-size: 2.5rem; text-decoration: overline double"
+          data-aos="fade-down"
+        >
           MY PROJECTS
         </h1>
         <div class="project-layout-parent">
-          <a href="#" class="project">
+          <a href="#" class="project" data-aos="fade-right">
             <img
               src="Images/calorimetry.jpg"
               alt="Calorimetry"
@@ -816,7 +839,7 @@
               style="width: 20%"
             />
           </a>
-          <a href="#" class="project">
+          <a href="#" class="project" data-aos="fade-right">
             <img src="Images/bot.jpeg" alt="Robot" class="project-img" />
             <h2 class="project-description-head">Personal Dicord Bot</h2>
             <p style="margin-top: 10px; padding: 5px">
@@ -830,7 +853,7 @@
               style="width: 20%"
             />
           </a>
-          <a href="#" class="project">
+          <a href="#" class="project" data-aos="fade-right">
             <img
               src="Images/tic-tac-toe-3.png"
               alt="tic-tac-toe"
