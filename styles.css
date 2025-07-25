@@ -322,6 +322,7 @@
     height: 500px;
     width: 400px;
     background-color: beige;
+    background-image: url(Images/edu-bg.jpg);
     border-radius: 25px;
     border-style: solid;
     box-shadow: 1px 1px 2px black, 0 0 25px orange, 0 0 5px darkorange;
@@ -331,6 +332,7 @@
     height: 500px;
     width: 400px;
     background-color: beige;
+    background-image: url(Images/edu-bg.jpg);
     border-radius: 25px;
     border-style: solid;
     box-shadow: 1px 1px 2px black, 0 0 25px orange, 0 0 5px darkorange;
@@ -340,6 +342,7 @@
     height: 500px;
     width: 400px;
     background-color: beige;
+    background-image: url(Images/edu-bg.jpg);
     border-radius: 25px;
     border-style: solid;
     box-shadow: 1px 1px 2px black, 0 0 25px orange, 0 0 5px darkorange;
@@ -401,6 +404,7 @@
     width: 450px;
     height: 270px;
     background-color: #cce2ff;
+    background-image: url(Images/interest-bg.jpg);
     border-radius: 25px;
     border-style: solid;
     box-shadow: 1px 1px 2px black, 0 0 25px turquoise, 0 0 5px darkturquoise;
@@ -464,6 +468,7 @@
     width: 350px;
     height: 400px;
     background-color: black;
+    background-image: url(Images/corner-bg.jpg);
     box-shadow: 1px 1px 2px black, 0 0 25px lightskyblue, 0 0 5px skyblue;
     text-decoration: none;
   }
@@ -533,6 +538,7 @@
 
   .project {
     color: white;
+    background-image: url(Images/project-bg.jpg);
     width: 350px;
     height: 500px;
     background-color: black;
@@ -626,3 +632,7 @@
     margin-top: 5vh;
   }
 }
+
+/*+++++++++++++++++++++++++++++++++++++++Click Me Style+++++++++++++++++++++++++++++++++++++++*/
+/*style="width: 35%; margin-top: 5px"*/
+/*For Corner do it 3px instead of 5px*/
