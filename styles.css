@@ -556,6 +556,164 @@
     font-size: 1.7rem;
   }
 
+  .thank-you {
+    padding-top: 27vh;
+    padding-bottom: 30vh;
+    background-image: url(Images/thankyou-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+
+  .thankyou-txt {
+    font-family: "Kaushan Script", cursive;
+    background: radial-gradient(circle, red, yellow);
+    background-clip: text;
+    color: transparent;
+    animation: corner-txt 15s linear infinite;
+    background-size: 200% 200%;
+    font-size: 6rem;
+  }
+
+  @keyframes thankyou-txt {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+
+  .visitor-txt {
+    background: radial-gradient(circle, dodgerblue, green);
+    background-clip: text;
+    color: transparent;
+    animation: corner-txt 15s linear infinite;
+    background-size: 200% 200%;
+    font-size: 2.5rem;
+  }
+
+  @keyframes visitor-txt {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+
+  .visitor {
+    margin-top: 5vh;
+  }
+
+  .foot {
+    padding-top: 25vh;
+    background-color: black;
+    color: #afafaf;
+  }
+
+  .foot-top-layout-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 15vh;
+  }
+
+  form {
+    text-align: left;
+    padding: 20px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: firebrick;
+    border-radius: 25px;
+  }
+
+  .form-input {
+    font-family: "Montserrat", sans-serif;
+    background-color: #1d1e22;
+    padding: 10px;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    height: 40px;
+    width: 290px;
+    border: 3px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #afafaf;
+    outline: none;
+  }
+
+  .message {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    background-color: #1d1e22;
+    padding: 10px;
+    border-radius: 6px;
+    border: 3px;
+    outline: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 600px;
+    height: 170px;
+    color: #afafaf;
+  }
+
+  .form-input:focus {
+    background-color: #801818;
+  }
+
+  .message:focus {
+    border-color: firebrick;
+    border-style: solid;
+  }
+
+  .full {
+    width: 600px;
+  }
+
+  .form-label {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    color: #afafaf;
+  }
+
+  .submit-btn {
+    font-family: "Montserrat", sans-serif;
+    width: 600px;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: black;
+    font-size: 23px;
+    background: firebrick;
+    padding: 10px 20px 10px 20px;
+    border: solid black 3px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .submit-btn:hover {
+    background: rgb(350, 34, 34);
+    text-decoration: none;
+  }
+
+  .foot-msg {
+    width: 520px;
+  }
+
+  .foot-bottom-layout-parent {
+    background-color: #292a2b;
+    padding-top: 10vh;
+  }
+
   /*=================================================MEDIA QUERIES=================================================*/
 
   @media screen and (min-width: 1170px) {
@@ -580,8 +738,18 @@
     .stack-opt {
       width: 6.5vw;
     }
-  }
 
+    .thankyou-txt {
+      font-size: 5.2rem;
+    }
+
+    .visitor-txt {
+      font-size: 2.1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 958px) {
   .error {
     display: none;
   }
@@ -630,6 +798,17 @@
     justify-content: center;
     margin: auto;
     margin-top: 5vh;
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  .foot-top-layout-parent {
+    display: grid;
+    gap: 10vh;
+  }
+
+  .foot-msg {
+    margin: auto;
   }
 }
 
