@@ -13,12 +13,14 @@
       rel="stylesheet"
     />
     <link href="aos-master/dist/aos.css" rel="stylesheet" />
+    <script src="jquery-3.7.1.min.js"></script>
   </head>
   <body>
     <script src="aos-master/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+
     <main>
       <div class="home" id="home" style="overflow-x: hidden">
         <div class="nav">
@@ -966,7 +968,11 @@
               />
             </div>
           </div>
-          <form action="" method="post" enctype="text/plain" data-aos="fade-up">
+          <form
+            action="https://formspree.io/f/xpwldkao"
+            method="POST"
+            data-aos="fade-up"
+          >
             <h1
               style="
                 margin-bottom: 20px;
@@ -1052,6 +1058,16 @@
         <div class="foot-bottom-layout-parent"></div>
       </div>
     </main>
+
+    <div class="load-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <script>
+      $(window).on("load", function () {
+        $(".load-wrapper").fadeOut("slow");
+      });
+    </script>
+
     <h3 class="error">
       ⚠️This website cannot be viewed in your device. Development for devices
       width below 958px is still ongoing. Kindly use another device to view the
