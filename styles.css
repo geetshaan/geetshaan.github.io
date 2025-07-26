@@ -3,10 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-@media screen and (min-width: 958px) {
+@media screen and (min-width: 650px) {
   body {
     text-align: center;
-    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
   }
 
   h1 {
@@ -41,7 +42,7 @@
     justify-content: flex-start;
     align-items: center;
     height: 70px;
-    width: 100vw;
+    width: 100%;
     gap: 1.875vw;
     padding-left: 11.25vw;
     position: fixed;
@@ -204,6 +205,8 @@
     font-size: 20px;
     background: white;
     padding: 10px 20px 10px 20px;
+    width: 150.266px;
+    height: 51px;
     border: solid black 4px;
     text-decoration: none;
   }
@@ -224,6 +227,8 @@
     background: rgb(0, 175, 0);
     padding: 10px 20px 10px 20px;
     border: solid black 4px;
+    width: 216.984px;
+    height: 51px;
     text-decoration: none;
   }
 
@@ -290,7 +295,7 @@
 
   .edu-layout-parent {
     display: flex;
-    width: 100vw;
+    width: 100%;
     justify-content: center;
     align-items: center;
     gap: 0;
@@ -613,7 +618,7 @@
   }
 
   .foot {
-    padding-top: 25vh;
+    padding-top: 20vh;
     background-color: black;
     color: #afafaf;
   }
@@ -746,16 +751,20 @@
     .visitor-txt {
       font-size: 2.1rem;
     }
+
+    .my-pic {
+      width: 24vw;
+    }
   }
 }
 
-@media screen and (min-width: 958px) {
+@media screen and (min-width: 650px) {
   .error {
     display: none;
   }
 }
 
-@media screen and (max-width: 958px) {
+@media screen and (max-width: 650px) {
   main {
     display: none;
   }
@@ -766,6 +775,8 @@
     display: grid;
     justify-content: center;
     align-items: center;
+    justify-items: center;
+    align-content: center;
     margin: auto;
     margin-top: 8vh;
     row-gap: 40px;
@@ -781,6 +792,8 @@
     display: grid;
     justify-content: center;
     align-items: center;
+    justify-items: center;
+    align-content: center;
     margin: auto;
     margin-top: 8vh;
     row-gap: 40px;
@@ -790,6 +803,8 @@
 @media screen and (max-width: 1050px) {
   .interest-layout-parent {
     display: grid;
+    justify-items: center;
+    align-content: center;
     width: 450px;
     height: 1240px;
     grid-template-columns: 1fr;
@@ -812,6 +827,105 @@
   }
 }
 
-/*+++++++++++++++++++++++++++++++++++++++Click Me Style+++++++++++++++++++++++++++++++++++++++*/
+@media screen and (min-width: 958px) {
+  .left-optional-edu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 958px) {
+  .top-img {
+    display: none;
+  }
+
+  .right-parent {
+    display: none;
+  }
+
+  .left-parent {
+    width: auto;
+    border-right-style: none;
+    border-right-width: 0px;
+    border-left-style: solid;
+    border-left-width: 4px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: start;
+    padding-left: 15px;
+    row-gap: 50px;
+    padding-top: 50px;
+  }
+
+  .me {
+    display: grid;
+    margin: auto;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: 6.468305304010349vh;
+    gap: 4.375vw;
+  }
+
+  .me-text {
+    text-align: center;
+    font-size: 1.5rem;
+    width: 90%;
+    margin: auto;
+  }
+
+  .my-pic {
+    width: 45%;
+  }
+
+  .top-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: start;
+    margin-top: 10.349288486416558vh;
+    margin-bottom: 6.468305304010349vh;
+    margin-left: 8vw;
+  }
+
+  .buttons {
+    width: 450px;
+  }
+
+  .dwnld {
+    zoom: 120%;
+  }
+
+  .cntctmebtn {
+    zoom: 120%;
+  }
+
+  .bio {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .dropdown {
+    margin-left: 49%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .corner-layout-parent {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    margin-top: 8vh;
+    gap: 30px;
+  }
+}
+
+/*++++++++++++++++++++++++++++++++++++++Click Me Style+++++++++++++++++++++++++++++++++++++++*/
 /*style="width: 35%; margin-top: 5px"*/
 /*For Corner do it 3px instead of 5px*/
