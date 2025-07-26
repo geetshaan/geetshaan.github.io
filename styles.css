@@ -494,6 +494,7 @@
     margin: auto;
     margin-top: 8vh;
     gap: 30px;
+    padding-bottom: 30px;
   }
 
   .second-certificate-parent {
@@ -525,7 +526,7 @@
     margin-top: 17.464424320827945vh;
     background-color: #e1e1e1;
     padding-top: 12.936610608020699vh;
-    padding-bottom: 12.936610608020699vh;
+    padding-bottom: 15.3vh;
   }
 
   .project-layout-parent {
@@ -627,6 +628,12 @@
     padding-bottom: 15vh;
   }
 
+  .foot-msg-txt {
+    font-size: 2.3rem;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
   form {
     text-align: left;
     padding: 20px;
@@ -640,7 +647,7 @@
     font-family: "Montserrat", sans-serif;
     background-color: #1d1e22;
     padding: 10px;
-    font-size: 1.1rem;
+    font-size: 17.6px;
     border-radius: 6px;
     height: 40px;
     width: 290px;
@@ -653,7 +660,7 @@
 
   .message {
     font-family: "Montserrat", sans-serif;
-    font-size: 1.1rem;
+    font-size: 17.6px;
     background-color: #1d1e22;
     padding: 10px;
     border-radius: 6px;
@@ -681,7 +688,7 @@
 
   .form-label {
     font-family: "Montserrat", sans-serif;
-    font-size: 1.2rem;
+    font-size: 19.2px;
     color: #afafaf;
   }
 
@@ -815,11 +822,19 @@
 @media screen and (max-width: 1230px) {
   .foot-top-layout-parent {
     display: grid;
-    gap: 10vh;
+    gap: 100px;
   }
 
   .foot-msg {
     margin: auto;
+  }
+
+  .foot-msg-txt {
+    margin-bottom: 30px;
+  }
+
+  .foot {
+    padding-top: 15vh;
   }
 }
 
