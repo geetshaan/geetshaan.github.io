@@ -855,6 +855,7 @@
   }
 
   .foot-btn {
+    white-space: nowrap;
     font-family: Arial;
     color: aliceblue;
     font-size: 20px;
