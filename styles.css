@@ -1123,24 +1123,29 @@ form {
 }
 
 @media screen and (max-width: 650px) {
-  /*.logo {
-    font-size: 1.5rem;
+  .cntctmebtn {
+    display: none;
+  }
+
+  .logo {
+    font-size: 1.7rem;
+  }
+
+  .left-text {
+    width: 100%;
   }
 
   .nav-items {
     height: 62px;
-  }
-
-  .wlcm {
-    font-size: 2.2rem;
+    padding-left: 5vw;
   }
 
   .geetshaan {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 
   .my-name {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
 
   .quote {
@@ -1152,15 +1157,25 @@ form {
 
   .bio {
     font-size: 1.3rem;
-    width: 300px;
+    width: 350px;
+  }
+
+  html {
+    zoom: 80%;
   }
 
   .stack-opt {
     width: 7vw;
-  }*/
+  }
 
-  body {
-    zoom: 60%;
+  .dwnld {
+    zoom: 100%;
+    margin-top: 5vw;
+  }
+
+  .foot-bottom-layout-wrapper {
+    justify-content: start;
+    padding-left: 10vw;
   }
 }
 
