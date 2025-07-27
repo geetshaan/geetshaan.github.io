@@ -1123,7 +1123,7 @@ form {
 }
 
 @media screen and (max-width: 650px) {
-  .logo {
+  /*.logo {
     font-size: 1.5rem;
   }
 
@@ -1131,8 +1131,16 @@ form {
     height: 62px;
   }
 
+  .wlcm {
+    font-size: 2.2rem;
+  }
+
+  .geetshaan {
+    font-size: 4rem;
+  }
+
   .my-name {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 
   .quote {
@@ -1144,11 +1152,15 @@ form {
 
   .bio {
     font-size: 1.3rem;
-    width: 350px;
+    width: 300px;
   }
 
   .stack-opt {
     width: 7vw;
+  }*/
+
+  body {
+    zoom: 60%;
   }
 }
 
