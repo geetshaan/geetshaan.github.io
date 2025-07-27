@@ -1182,6 +1182,14 @@ form {
     justify-content: start;
     padding-left: 10vw;
   }
+
+  .foot {
+    zoom: 74%;
+  }
+
+  .bottom-quote {
+    width: 120vw;
+  }
 }
 
 /*++++++++++++++++++++++++++++++++++++++Click Me Style+++++++++++++++++++++++++++++++++++++++*/
