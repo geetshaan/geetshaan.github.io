@@ -1124,7 +1124,7 @@ form {
 
 @media screen and (max-width: 650px) {
   .top-container {
-    margin-top: 30vh;
+    margin-top: 28.5vh;
     margin-bottom: 13vh;
   }
 
@@ -1175,7 +1175,7 @@ form {
   }
 
   .stack-opt {
-    width: 7vw;
+    width: 12vw;
   }
 
   .foot-bottom-layout-wrapper {
