@@ -1124,7 +1124,7 @@ form {
 
 @media screen and (max-width: 650px) {
   .top-container {
-    margin-top: 28vh;
+    margin-top: 30vh;
     margin-bottom: 13vh;
   }
 
@@ -1146,11 +1146,11 @@ form {
   }
 
   .geetshaan {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
 
   .my-name {
-    font-size: 4.5rem;
+    font-size: 5rem;
   }
 
   .quote {
@@ -1161,8 +1161,8 @@ form {
   }
 
   .bio {
-    font-size: 1.3rem;
-    width: 350px;
+    font-size: 1.5rem;
+    width: 320px;
   }
 
   .dwnld {
@@ -1171,7 +1171,7 @@ form {
   }
 
   html {
-    zoom: 75%;
+    zoom: 65%;
   }
 
   .stack-opt {
