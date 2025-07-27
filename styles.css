@@ -1123,6 +1123,11 @@ form {
 }
 
 @media screen and (max-width: 650px) {
+  .top-container {
+    margin-top: 28vh;
+    margin-bottom: 13vh;
+  }
+
   .cntctmebtn {
     display: none;
   }
@@ -1160,17 +1165,17 @@ form {
     width: 350px;
   }
 
+  .dwnld {
+    zoom: 100%;
+    margin-top: 5vw;
+  }
+
   html {
-    zoom: 80%;
+    zoom: 75%;
   }
 
   .stack-opt {
     width: 7vw;
-  }
-
-  .dwnld {
-    zoom: 100%;
-    margin-top: 5vw;
   }
 
   .foot-bottom-layout-wrapper {
