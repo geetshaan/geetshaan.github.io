@@ -1285,8 +1285,8 @@ form {
   }
 
   @media screen and (max-width: 330px) {
-    .foot {
-      zoom: 70%;
+    .foot-top-layout-parent {
+      zoom: 95%;
     }
   }
 }
