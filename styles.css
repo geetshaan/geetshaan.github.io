@@ -167,13 +167,13 @@ p {
 }
 
 .dropdwnimg {
-  height: 85%;
+  height: 82%;
 }
 
 .dropdown {
   position: absolute;
   display: inline-block;
-  height: 90%;
+  height: 82%;
   margin-top: 5px;
   right: 5vw;
 }
