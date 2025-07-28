@@ -82,7 +82,6 @@
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++GLOBAL+++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-/*@media screen and (min-width: 650px) {*/
 body {
   text-align: center;
   width: 100%;
@@ -169,7 +168,7 @@ p {
   display: inline-block;
   height: 90%;
   margin-top: 5px;
-  right: 4vw;
+  right: 5vw;
 }
 
 .dropdown-content {
@@ -236,7 +235,7 @@ p {
   text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkred;
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 958px) {
   .quote {
     font-size: 2rem;
     font-family: "Montserrat", sans-serif;
@@ -308,14 +307,15 @@ p {
   font-family: Arial;
   color: black;
   font-size: 20px;
-  background: rgb(0, 175, 0);
+  background: rgb(0, 250, 0);
   padding: 10px 20px 10px 20px;
   border: solid black 4px;
   text-decoration: none;
 }
 
 .dwnld:hover {
-  background: rgb(0, 255, 0);
+  color: white;
+  background: black;
   text-decoration: none;
 }
 
@@ -645,7 +645,7 @@ p {
 }
 
 .thank-you {
-  padding-top: 30vh;
+  padding-top: 35vh;
   padding-bottom: 35vh;
   background-image: url(Images/thankyou-bg.jpg);
   background-repeat: no-repeat;
@@ -906,6 +906,10 @@ form {
 }
 
 @media screen and (max-width: 1170px) {
+  .nav-items {
+    padding-left: 6vw;
+  }
+
   .nav-opt {
     display: none;
   }
@@ -930,8 +934,6 @@ form {
     width: 24vw;
   }
 }
-
-/*}*/
 
 @media screen and (max-width: 1280px) {
   .certificate-layout-parent {
@@ -1022,6 +1024,13 @@ form {
     display: none;
   }
 
+  .quote {
+    white-space: nowrap;
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    text-shadow: 1px 1px 2px black, 0 0 25px orange, 0 0 5px darkorange;
+  }
+
   .right-parent {
     display: none;
   }
@@ -1106,34 +1115,58 @@ form {
 
 /**********************************************************************************************************/
 
-/*@media screen and (min-width: 650px) {
-  .error {
-    display: none;
+@media screen and (max-width: 680px) {
+  @media screen and (min-width: 650px) {
+    .foot-top-layout-parent {
+      zoom: 90%;
+    }
   }
 }
 
 @media screen and (max-width: 650px) {
-  main {
-    display: none;
+  html {
+    zoom: 85%;
   }
-}*/
 
-.error {
-  display: none;
-}
+  .geetshaan {
+    font-size: 4.5rem;
+  }
 
-@media screen and (max-width: 650px) {
-  .top-container {
-    margin-top: 28.5vh;
-    margin-bottom: 13vh;
+  .my-name {
+    font-size: 5.5rem;
+  }
+
+  .quote {
+    white-space: nowrap;
+    font-size: 2.2rem;
+    font-family: "Montserrat", sans-serif;
+    text-shadow: 1px 1px 2px black, 0 0 25px orange, 0 0 5px darkorange;
+  }
+
+  .bio {
+    font-size: 1.5rem;
+    width: 420px;
+  }
+
+  .buttons {
+    gap: 1.5vw;
   }
 
   .cntctmebtn {
-    display: none;
+    zoom: 110%;
+  }
+
+  .dwnld {
+    zoom: 110%;
+  }
+
+  .top-container {
+    margin-top: 19.5vh;
+    margin-bottom: 10vh;
   }
 
   .logo {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
   }
 
   .left-text {
@@ -1141,16 +1174,62 @@ form {
   }
 
   .nav-items {
-    height: 62px;
-    padding-left: 5vw;
+    padding-left: 6vw;
+  }
+
+  .foot {
+    zoom: 84%;
+  }
+
+  .foot-bottom-layout-wrapper {
+    justify-content: start;
+    padding-left: 8vw;
+  }
+
+  .bottom-quote {
+    width: 100vw;
+  }
+
+  .stack-opt {
+    width: 9vw;
+  }
+
+  .thank-you {
+    zoom: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .top-container {
+    margin-top: 25.5vh;
+    margin-bottom: 12vh;
+  }
+
+  .buttons {
+    display: grid;
+    justify-items: start;
+    gap: 2vh;
+  }
+
+  .logo {
+    font-size: 1.9rem;
+  }
+
+  .left-text {
+    width: 100%;
+  }
+
+  .nav-items {
+    height: 80px;
+    padding-left: 6vw;
   }
 
   .geetshaan {
-    font-size: 4rem;
+    font-size: 4.2rem;
   }
 
   .my-name {
-    font-size: 5rem;
+    font-size: 5.2rem;
   }
 
   .quote {
@@ -1165,9 +1244,13 @@ form {
     width: 420px;
   }
 
+  .cntctmebtn {
+    zoom: 120%;
+  }
+
   .dwnld {
-    zoom: 100%;
-    margin-top: 5vw;
+    zoom: 120%;
+    grid-row: 1;
   }
 
   html {
@@ -1190,8 +1273,29 @@ form {
   .bottom-quote {
     width: 120vw;
   }
+
+  .thank-you {
+    zoom: 80%;
+  }
+
+  @media screen and (min-width: 370px) {
+    .top-container {
+      zoom: 110%;
+    }
+  }
 }
 
+@media screen and (min-width: 319px) {
+  .error {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 319px) {
+  main {
+    display: none;
+  }
+}
 /*++++++++++++++++++++++++++++++++++++++Click Me Style+++++++++++++++++++++++++++++++++++++++*/
 /*style="width: 35%; margin-top: 5px"*/
 /*For Corner do it 3px instead of 5px*/
