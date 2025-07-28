@@ -1283,6 +1283,12 @@ form {
       zoom: 110%;
     }
   }
+
+  @media screen and (max-width: 330px) {
+    .foot {
+      zoom: 70%;
+    }
+  }
 }
 
 @media screen and (min-width: 319px) {
