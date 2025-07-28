@@ -1201,8 +1201,8 @@ form {
 
 @media screen and (max-width: 480px) {
   .top-container {
-    margin-top: 25.5vh;
-    margin-bottom: 12vh;
+    margin-top: 23vh;
+    margin-bottom: 11vh;
   }
 
   .buttons {
