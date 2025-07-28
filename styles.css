@@ -198,6 +198,79 @@ p {
 
 /*----------------top-container = left-text + top-img----------------*/
 
+.bg-icon {
+  z-index: -100;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  opacity: 0.85;
+}
+
+.bgi1 {
+  top: 220px;
+  left: 370px;
+}
+
+.bgi2 {
+  top: 250px;
+  left: 650px;
+}
+
+.bgi3 {
+  top: 430px;
+  left: 525px;
+}
+
+.bgi4 {
+  top: 445px;
+  left: 700px;
+}
+
+.bgi5 {
+  top: 160px;
+  left: 500px;
+}
+
+.bgi6 {
+  top: 95px;
+  left: 190px;
+}
+
+.bgi7 {
+  top: 150px;
+  left: 720px;
+}
+
+.bgi8 {
+  top: 635px;
+  left: 590px;
+}
+
+.bgi9 {
+  top: 500px;
+  left: 200px;
+}
+
+.bgi10 {
+  top: 350px;
+  left: 740px;
+}
+
+.bgi11 {
+  top: 300px;
+  left: 190px;
+}
+
+.bgi12 {
+  top: 650px;
+  left: 740px;
+}
+
+.bgi13 {
+  top: 450px;
+  left: 350px;
+}
+
 .top-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -1110,6 +1183,12 @@ form {
     margin: auto;
     margin-top: 8vh;
     gap: 30px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .bg-icon {
+    display: none;
   }
 }
 
