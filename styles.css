@@ -111,9 +111,18 @@ p {
 
 /*home = navbar + top-container*/
 
+#myVideo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 120%;
+  object-fit: cover;
+  z-index: -1;
+}
+
 .home {
   display: grid;
-  background-image: url(Images/cool-geometric-triangular-figure-neon-laser-light-great-backgrounds-wallpapers.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -149,6 +158,7 @@ p {
 }
 
 .nav-opt:hover {
+  color: #ff4da6;
   text-decoration: underline;
 }
 
@@ -240,21 +250,22 @@ p {
 .my-name {
   font-size: 6.4rem;
   font-family: "Bitcount Single", system-ui;
-  text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkred;
+  text-shadow: 0 0 1px #fff, 0 0 5px #ff4da6, 0 0 10px #ff4da6, 0 0 15px #ff4da6,
+    0 0 20px #ff4da6, 0 0 25px #ff4da6, 0 0 30px #ff4da6;
   animation: glow 1s ease-in-out infinite alternate;
 }
 
-@-webkit-keyframes glow {
+/*@-webkit-keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px darkred,
-      0 0 40px darkred, 0 0 50px darkred, 0 0 60px darkred, 0 0 70px darkred;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
   }
 
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red,
-      0 0 60px red, 0 0 70px red, 0 0 80px red;
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
-}
+}*/
 
 @media screen and (min-width: 958px) {
   .quote {
@@ -312,15 +323,16 @@ p {
   font-size: 20px;
   background: dodgerblue;
   padding: 10px 20px 10px 20px;
-  border: solid black 2.5px;
+  border: solid black 1px;
   text-decoration: none;
+  box-shadow: 0 0 25px skyblue, 0 0 5px dodgerblue;
 }
 
 .cntctmebtn:hover {
   background: black;
   text-decoration: none;
   color: white;
-  border: solid white 2.5px;
+  border: solid white 1px;
 }
 
 .dwnld {
@@ -332,15 +344,16 @@ p {
   font-size: 20px;
   background: rgb(0, 250, 0);
   padding: 10px 20px 10px 20px;
-  border: solid black 2.5px;
+  border: solid black 1px;
   text-decoration: none;
+  box-shadow: 0 0 25px greenyellow, 0 0 5px green;
 }
 
 .dwnld:hover {
   color: white;
   background: black;
   text-decoration: none;
-  border: solid white 2.5px;
+  border: solid white 1px;
 }
 
 .top-img {
@@ -356,7 +369,7 @@ p {
 
 .tech {
   background-color: #e1e1e1;
-  background-image: url(Images/vecteezy_abstract-neon-background-with-glitch-effect_.jpg);
+  background-image: url(Images/tech-bg.avif);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -380,7 +393,7 @@ p {
 .about {
   padding-top: 17.464424320827945vh;
   padding-bottom: 17.464424320827945vh;
-  background-image: url(Images/about-bg.jpg);
+  background-color: #0e0e0e;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -606,7 +619,7 @@ p {
 .certifications {
   padding-top: 17.464424320827945vh;
   padding-bottom: 17.464424320827945vh;
-  background-image: url(Images/tech-bg.jpg);
+  background-color: #0e0e0e;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -645,11 +658,19 @@ p {
   width: 20%;
 }
 
+#projectVideo {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 170%;
+  padding-top: 0;
+  object-fit: cover;
+  z-index: -1;
+}
+
 .projects {
-  background-color: #e1e1e1;
-  padding-top: 12.936610608020699vh;
+  background-color: transparent;
   padding-bottom: 15.3vh;
-  background-image: url(Images/corner-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
