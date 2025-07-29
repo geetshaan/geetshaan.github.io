@@ -111,18 +111,11 @@ p {
 
 /*home = navbar + top-container*/
 
-#myVideo {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 120%;
-  object-fit: cover;
-  z-index: -1;
-}
-
 .home {
+  min-height: 100vh;
   display: grid;
+  grid-template-rows: 70px auto;
+  background-image: url(Images/stars-ezgif.com-video-to-webp-converter.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -222,14 +215,15 @@ p {
   align-items: center;
   justify-items: center;
   margin-top: 10.349288486416558vh;
-  margin-bottom: 6.468305304010349vh;
+  /*margin-bottom: 6.468305304010349vh;*/
+  margin-bottom: 13vh;
 }
 
 /*left-text = wlcm + geetshaan(includes my-name) + quote + bio + buttons()*/
 
 .left-text {
   width: 40.625vw;
-  padding-bottom: 19.404915912031047vh;
+  /*-padding-bottom: 13vh;*/
   text-align: left;
 }
 
@@ -359,17 +353,25 @@ p {
 .top-img {
   align-self: stretch;
   justify-self: start;
-  height: 71.53945666235447vh;
-  width: 16.0625vw;
+  /*height: 71.53945666235447vh;
+  width: 16.0625vw;*/
   z-index: -1;
-  padding-bottom: 90.55627425614489vh;
+  /*padding-bottom: 90.55627425614489vh;*/
+}
+
+.img-head {
+  position: absolute;
+  height: 170%;
+  right: -10vw;
+  top: -13.583441138421733vh;
+  z-index: -1;
 }
 
 /*----------------tech = h1(see index.html) + stack(includes stack-opt)----------------*/
 
 .tech {
   background-color: #e1e1e1;
-  background-image: url(Images/tech-bg.avif);
+  background-image: url(Images/binary.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -433,6 +435,7 @@ p {
 
 .left-parent {
   width: 50vw;
+  border-color: orange;
   border-right-style: solid;
   border-right-width: 4px;
   display: grid;
@@ -445,11 +448,36 @@ p {
 
 .right-parent {
   width: 50vw;
+  border-color: orange;
   text-align: left;
   grid-template-rows: 1fr;
   justify-content: start;
   padding-left: 15px;
   padding-top: 50px;
+}
+
+.trans1 {
+  position: absolute;
+  width: 200%;
+  top: -30px;
+  left: 380px;
+  z-index: -1;
+}
+
+.trans2 {
+  position: absolute;
+  width: 200%;
+  top: 10px;
+  right: 400px;
+  z-index: -1;
+}
+
+.trans3 {
+  position: absolute;
+  width: 200%;
+  top: 15px;
+  left: 340px;
+  z-index: -1;
 }
 
 .clg {
@@ -460,6 +488,8 @@ p {
   border-radius: 25px;
   border-style: solid;
   box-shadow: 1px 1px 2px black, 0 0 25px orange, 0 0 5px darkorange;
+  position: relative;
+  z-index: 1;
 }
 
 .schl2 {
@@ -470,6 +500,8 @@ p {
   border-radius: 25px;
   border-style: solid;
   box-shadow: 1px 1px 2px black, 0 0 25px orange, 0 0 5px darkorange;
+  position: relative;
+  z-index: 1;
 }
 
 .schl1 {
@@ -480,6 +512,8 @@ p {
   border-radius: 25px;
   border-style: solid;
   box-shadow: 1px 1px 2px black, 0 0 25px orange, 0 0 5px darkorange;
+  position: relative;
+  z-index: 2;
 }
 
 .clg-name-parent {
@@ -543,6 +577,8 @@ p {
   border-radius: 25px;
   border-style: solid;
   box-shadow: 1px 1px 2px black, 0 0 25px turquoise, 0 0 5px darkturquoise;
+  position: relative;
+  z-index: 3;
 }
 
 .interest-name-parent {
@@ -658,19 +694,10 @@ p {
   width: 20%;
 }
 
-#projectVideo {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 170%;
-  padding-top: 0;
-  object-fit: cover;
-  z-index: -1;
-}
-
 .projects {
   background-color: transparent;
   padding-bottom: 15.3vh;
+  background-image: url(Images/flame-ezgif.com-video-to-webp-converter.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1085,6 +1112,16 @@ form {
 }
 
 @media screen and (max-width: 958px) {
+  .trans1 {
+    display: none;
+  }
+  .trans2 {
+    display: none;
+  }
+  .trans3 {
+    display: none;
+  }
+
   .top-img {
     display: none;
   }
@@ -1229,7 +1266,7 @@ form {
 
   .top-container {
     margin-top: 19.5vh;
-    margin-bottom: 10vh;
+    margin-bottom: 18vh;
   }
 
   .logo {
@@ -1268,8 +1305,8 @@ form {
 
 @media screen and (max-width: 480px) {
   .top-container {
-    margin-top: 23.5vh;
-    margin-bottom: 11vh;
+    margin-top: 28vh;
+    margin-bottom: 23vh;
   }
 
   .buttons {
@@ -1284,6 +1321,10 @@ form {
 
   .left-text {
     width: 100%;
+  }
+
+  .home {
+    grid-template-rows: 80px auto;
   }
 
   .nav-items {
