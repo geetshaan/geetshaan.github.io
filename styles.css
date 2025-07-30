@@ -1126,6 +1126,12 @@ form {
     display: none;
   }
 
+  @media screen and (max-height: 750px) {
+    .top-container {
+      padding-bottom: 5vh;
+    }
+  }
+
   .quote {
     white-space: nowrap;
     font-size: 2rem;
@@ -1265,7 +1271,7 @@ form {
   }
 
   .top-container {
-    margin-top: 15vh;
+    margin-top: 18vh;
     margin-bottom: 18vh;
   }
 
@@ -1305,8 +1311,8 @@ form {
 
 @media screen and (max-width: 480px) {
   .top-container {
-    margin-top: 22.5vh;
-    margin-bottom: 25vh;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
   }
 
   .buttons {
