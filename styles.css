@@ -1265,7 +1265,7 @@ form {
   }
 
   .top-container {
-    margin-top: 16vh;
+    margin-top: 15vh;
     margin-bottom: 18vh;
   }
 
@@ -1305,7 +1305,7 @@ form {
 
 @media screen and (max-width: 480px) {
   .top-container {
-    margin-top: 23vh;
+    margin-top: 22.5vh;
     margin-bottom: 25vh;
   }
 
