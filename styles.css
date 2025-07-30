@@ -214,7 +214,7 @@ p {
   grid-template-columns: 2fr 1fr;
   align-items: center;
   justify-items: center;
-  margin-top: 10.349288486416558vh;
+  margin-top: 10vh;
   /*margin-bottom: 6.468305304010349vh;*/
   margin-bottom: 13vh;
 }
@@ -375,7 +375,7 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 12.936610608020699vh;
+  padding-bottom: 8vh;
 }
 
 .stack {
@@ -383,7 +383,7 @@ p {
   justify-content: center;
   align-items: center;
   gap: 1.875vw;
-  margin-top: 6.468305304010349vh;
+  margin-top: 4vh;
 }
 
 .stack-opt {
@@ -459,7 +459,7 @@ p {
 .trans1 {
   position: absolute;
   width: 200%;
-  top: -30px;
+  top: -100px;
   left: 380px;
   z-index: -1;
 }
@@ -1265,7 +1265,7 @@ form {
   }
 
   .top-container {
-    margin-top: 19.5vh;
+    margin-top: 16vh;
     margin-bottom: 18vh;
   }
 
@@ -1305,8 +1305,8 @@ form {
 
 @media screen and (max-width: 480px) {
   .top-container {
-    margin-top: 28vh;
-    margin-bottom: 23vh;
+    margin-top: 23vh;
+    margin-bottom: 25vh;
   }
 
   .buttons {
