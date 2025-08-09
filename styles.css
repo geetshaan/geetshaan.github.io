@@ -371,7 +371,7 @@ p {
 
 .tech {
   background-color: #e1e1e1;
-  background-image: url(Images/binary.webp);
+  background-image: url(Images/binary.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -459,7 +459,7 @@ p {
 .trans1 {
   position: absolute;
   width: 200%;
-  top: -100px;
+  top: -170px;
   left: 380px;
   z-index: -1;
 }
@@ -573,10 +573,13 @@ p {
   width: 450px;
   height: 270px;
   background-color: #cce2ff;
-  background-image: url(Images/interest-bg.jpg);
+  background-image: url(Images/32947080_detailed_hand_painted_pink_watercolour_background_0509.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 25px;
   border-style: solid;
-  box-shadow: 1px 1px 2px black, 0 0 25px turquoise, 0 0 5px darkturquoise;
+  box-shadow: 1px 1px 2px black, 0 0 25px pink, 0 0 5px plum;
   position: relative;
   z-index: 3;
 }
